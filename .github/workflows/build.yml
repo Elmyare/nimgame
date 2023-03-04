@@ -19,4 +19,5 @@ jobs:
         run: make test
       
       - name: Test run
-        run: git update-index —chmod=+x ./bin/test && ./bin/test
+        run: git update-index —chmod=+x ./bin/test
+        run: ./bin/test
