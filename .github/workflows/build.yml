@@ -18,6 +18,8 @@ jobs:
       - name: Build test
         run: make test
       
-      - name: Test run
+      - name: Give permission
         run: git update-index —chmod=+x ./bin/test
+      
+      -name: Test run
         run: ./bin/test
